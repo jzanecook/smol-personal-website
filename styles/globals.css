@@ -1,0 +1,58 @@
+/* styles/globals.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.box-shadow-green {
+  box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.5);
+}
+
+#header, #footer, #project-card, #contact-form {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1E1E1E;
+}
+
+#header a, #footer a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+#project-card img {
+  width: 100%;
+  height: auto;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #2E2E2E;
+  color: #ffffff;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00FF00;
+  color: #000000;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #00CC00;
+}
