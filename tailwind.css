@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-6;
+  }
+
+  .header {
+    @apply text-2xl font-bold;
+  }
+
+  .footer {
+    @apply text-sm;
+  }
+
+  .card {
+    @apply bg-gray-800 rounded-lg shadow-lg overflow-hidden;
+  }
+}
+
+@layer utilities {
+  @screen sm {
+    .container {
+      @apply px-4;
+    }
+  }
+
+  @screen md {
+    .container {
+      @apply px-2;
+    }
+  }
+
+  @screen lg {
+    .container {
+      @apply px-0;
+    }
+  }
+}
